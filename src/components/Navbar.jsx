@@ -33,7 +33,7 @@ const Navbar = () => {
         </ul>
 
         {/* DESKTOP CTA */}
-        <button className="hidden md:block px-9 py-3 rounded-full bg-gradient-to-b from-[#c95fe4] via-[rgb(131,40,126)] to-[#448dec] text-sm font-semibold hover:opacity-90 transition">
+        <button className="hidden md:block px-9 py-3 rounded-full cursor-pointer bg-gradient-to-b from-[#c95fe4] via-[rgb(131,40,126)] to-[#448dec] text-sm font-semibold hover:opacity-90 transition">
           Let’s Talk
         </button>
 

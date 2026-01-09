@@ -1,46 +1,99 @@
-import heroBg from "../assets/hero-bg.png"; // your generated background image
+import heroBg from "../assets/hero.png";
 
 const Hero = () => {
     return (
         <section
-            className="relative min-h-[90vh]  flex items-center  text-white overflow-hidden px-6 md:px-16"
+            className="
+        relative min-h-[90vh]
+        flex items-center
+        text-white overflow-hidden
+        px-4 sm:px-8 md:px-16
+      "
             style={{
                 backgroundImage: `url(${heroBg})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
-            {/* DARK GRADIENT OVERLAY */}
-            <div className="absolute inset-0  " />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/30" />
 
-            {/* CONTENT */}
-            <div className="relative z-10 max-w-5xl ml-30">
-                <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold leading-tight">
+            {/* Content */}
+            <div
+                className="
+          relative z-10
+          w-full max-w-5xl
+          text-center md:text-left
+          mx-auto
+        "
+            >
+                {/* Heading */}
+                <h1
+                    className="
+            text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+            font-bold leading-tight
+          "
+                >
                     A Creative <br />
-                    Digital <span className="text-lime-300">Studio</span>
+                    Digital <span className="text-[#c95fe4]">Studio</span>
                 </h1>
 
-                <p className="mt-6 max-w-xl text-gray-300 text-sm sm:text-base">
+                {/* Description */}
+                <p
+                    className="
+            mt-6
+            max-w-xl
+            mx-auto md:mx-0
+            text-gray-300
+            text-sm sm:text-base md:text-lg
+          "
+                >
                     We design and build digital experiences that feel simple,
                     functional, and human — blending creativity with technology.
                 </p>
 
-                <div className="mt-10 flex items-center gap-6">
-                    <button className="px-8 py-3 rounded-full bg-lime-300 text-black font-semibold hover:bg-lime-200 transition">
+                {/* Buttons */}
+                <div
+                    className="
+            mt-10
+            flex flex-col sm:flex-row
+            items-center
+            gap-6
+            justify-center md:justify-start
+          "
+                >
+                    <button
+                        className="
+              px-10 py-4 rounded-full
+              bg-gradient-to-b from-[#c95fe4] via-[rgb(131,40,126)] to-[#448dec]
+              text-black text-lg font-bold
+              hover:scale-105 transition
+            "
+                    >
                         View Work
                     </button>
 
-                    <button className="text-sm uppercase tracking-widest text-gray-300 hover:text-white transition">
+                    <button
+                        className="
+              text-sm sm:text-base
+              font-bold uppercase tracking-widest
+              text-gray-300
+              hover:text-white transition
+            "
+                    >
                         About Studio →
                     </button>
                 </div>
             </div>
 
-            {/* GLOW */}
+            {/* Glow */}
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-                <div className="w-[500px] h-[500px] bg-lime-400/10 blur-[160px] rounded-full" />
+                <div className="
+          w-[300px] sm:w-[420px] md:w-[520px]
+          h-[300px] sm:h-[350px] md:h-[520px]
+          bg-lime-400/10 blur-[160px] rounded-full
+        " />
             </div>
-            
         </section>
     );
 };
