@@ -1,14 +1,28 @@
-import React from 'react'
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import heroBg from "./assets/hero-bg.png"; // ✅ correct path
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-    </div>
-  )
-}
+    <div
+      className="min-h-screen relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 " />
 
-export default App
+      {/* CONTENT */}
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+      </div>
+    </div>
+  );
+};
+
+export default App;
