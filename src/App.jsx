@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import heroBg from "./assets/hero-bg.png"; // ✅ correct path
 import Feachure from './components/Feachure.jsx'
 import Cards from './components/Cards.jsx'
+import Capabilities from './components/Capabilities.jsx'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Hero />
         <Feachure />
         <Cards />
+        <Capabilities />
       </div>
     </div>
   );
