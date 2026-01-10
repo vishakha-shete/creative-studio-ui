@@ -41,12 +41,12 @@ const Hero = () => {
                 {/* Description */}
                 <p
                     className="
-            mt-6
-            max-w-xl
-            mx-auto md:mx-0
-            text-gray-300
-            text-sm sm:text-base md:text-lg
-          "
+                   mt-6
+                   max-w-xl
+                   mx-auto md:mx-0
+                  text-gray-300
+                   text-sm sm:text-base md:text-lg
+               "
                 >
                     We design and build digital experiences that feel simple,
                     functional, and human — blending creativity with technology.

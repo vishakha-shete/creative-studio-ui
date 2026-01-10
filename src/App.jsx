@@ -5,6 +5,7 @@ import heroBg from "./assets/hero-bg.png"; // ✅ correct path
 import Feachure from './components/Feachure.jsx'
 import Cards from './components/Cards.jsx'
 import Capabilities from './components/Capabilities.jsx'
+import Collection from './components/collection.jsx'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Feachure />
         <Cards />
         <Capabilities />
+        <Collection />
       </div>
     </div>
   );
