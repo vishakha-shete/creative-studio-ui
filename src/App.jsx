@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import heroBg from "./assets/hero-bg.png"; // ✅ correct path
 import Feachure from './components/Feachure.jsx'
+import Cards from './components/Cards.jsx'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <Feachure />
+        <Cards />
       </div>
     </div>
   );

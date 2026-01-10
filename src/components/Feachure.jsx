@@ -76,7 +76,7 @@ const Features = () => {
   };
 
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section className="relative py-10 px-6 overflow-hidden">
 
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-[#0b1220] to-[#020617]" />
